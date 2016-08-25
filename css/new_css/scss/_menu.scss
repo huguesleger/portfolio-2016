@@ -1,0 +1,102 @@
+.main{
+    background-color: #fff; /*----choise-color-menu----*/
+}
+
+.navbar {
+    min-height: 85px; /*----choise-hauteur-min-menu----*/
+    margin-bottom:0;
+}
+
+.navbar-main {
+    border:none;
+}
+
+ .navbar-nav li a {
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 10px;
+  line-height: 42px;
+}
+
+.navbar-main .navbar-nav > li > a {
+  color: $color-txt-nav;
+  cursor: pointer;
+}
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus {
+  color: $color-txt-nav-hover;
+  border-bottom: 2px solid;
+  background-color: transparent;
+}
+.navbar-main .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+ .navbar-right {
+    margin-right: -38px;
+  }
+
+.navbar-brand{
+    background: rgba(105, 105, 105,1);
+    height: 86px;
+    padding-top: 2px;
+    transition: 0.4s;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+    background: rgba(105, 105, 105,0.7);
+    transition: 0.5s;
+
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    background: rgba(255,255,255,0.9);
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*----responsive-mobile-----*/
+@media (min-width: 320px)and(max-width: 760px) {
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus {
+  color: $color-txt-nav-hover;
+  border-bottom: none;
+  background: rgba(26, 188, 144, 0.5);
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    background: rgba(255,255,255,0.9);
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 460px;
+}
+
+}
+/*---fin-responsive-mobile-----*/

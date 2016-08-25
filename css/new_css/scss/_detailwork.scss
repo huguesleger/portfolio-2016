@@ -1,0 +1,203 @@
+/*------detail-work-------------*/
+
+.detail-work {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1); /*---change color background---*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+
+}
+
+
+
+.closebtnwork {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 36px !important;
+    margin-left: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+      &:hover{
+        color: #000;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+}
+
+@media screen and(min-width: 566px)and(max-width: 775px){
+  .closebtnwork {
+      position: absolute;
+      z-index: 2000;
+      top: 12%;
+      right: 5%;
+      font-size: 36px !important;
+      margin-left: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #818181;
+      transition: 0.3s;
+        &:hover{
+          color: #000;
+          transition: 0.3s;
+          text-decoration: none;
+        }
+  }
+
+}
+
+ .detail-img img{
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.8s
+}
+
+
+
+.description{
+  padding-left: 10%;
+  text-align: justify;
+}
+
+.txt-details{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.client {
+  width:100px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.fondateur {
+  width:100px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.annees-web{
+  width:100px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.project-details{
+  padding-top: 20px;
+  width:200px;
+  text-transform: uppercase;
+  font-size: 22px;
+  border-bottom: 1px solid #777;
+}
+
+.visu-logo{
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+.illu-salegosse img{
+padding-bottom: 40px;
+}
+.illu-salegosse p{
+padding-bottom: 40px;
+}
+
+.btn-lien{
+  color: $color-txt-clair;
+  padding-right: 10%;
+  width: 100%;
+  text-align: right;
+  float: right;
+}
+
+.btn-lien:hover{
+  text-decoration: none;
+}
+
+.models p{
+  padding-top: 20px;
+}
+
+.template img{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work-web{
+  transition: 0.5s;
+}
+
+.projets{
+  width: 100%;
+  display: none;
+  position: absolute;
+    p{
+      color: $color-txt-nav;
+    }
+}
+
+
+.link-facebook{
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../images/facebook.png');
+  background-repeat: no-repeat;
+  float: left;
+  transition: 0.5s;
+  &:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+
+  }
+}
+
+
+.link-web{
+  padding: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../images/siteweb.png');
+  background-repeat: no-repeat;
+  float: left;
+  &:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+
+  }
+}
+
+.fa.fa-angle-up {  /*-------------scroll-top--------------------*/
+margin-top: -20px;
+padding-top: 8px;
+background-color: #333;
+width: 50px;
+height: 50px;
+cursor:pointer;
+float: right;
+font-size: 30px;
+color: $color-txt-clair;
+text-decoration: none;
+
+}
+
+@media screen and (max-height: 450px) {
+  .detail-work {padding-top: 15px;}
+  .detail-work a {font-size: 18px;}
+
+}
+
+/*------fin-detail-work-------------*/

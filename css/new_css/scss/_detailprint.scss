@@ -1,0 +1,67 @@
+/*-------detail-print-------------*/
+
+.left-detail {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+.closebtn {
+    color: #818181;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+      &:hover{
+        color: $color-txt-clair;
+        text-decoration: none;
+      }
+
+}
+
+#serigraphie {
+   position: relative;
+   transition: margin-right .5s;
+}
+
+#amka {
+   position: relative;
+   transition: margin-right .5s;
+}
+
+#fiveo {
+   position: relative;
+   transition: margin-right .5s;
+}
+
+#darkdog {
+   position: relative;
+   transition: margin-right .5s;
+}
+
+
+.txt-detail-print {
+
+  padding-left: 900px;
+  margin-top: -50px;
+  color: #000;
+  font-size: 22px;
+  position: absolute;
+}
+
+.sortie{
+  font-size: 12px;
+}
+
+/*------fin-detail-print-------------*/

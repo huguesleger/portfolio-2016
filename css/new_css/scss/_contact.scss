@@ -1,0 +1,143 @@
+/*-------contact-------------*/
+
+.contact{
+  float: right;
+  position: absolute;
+  padding-left: 250px;
+  padding-top: 80px;
+
+}
+
+.title-contact{
+  font-size: 33px;
+  height: 90px;
+  text-align: center;
+  color: $color-txt;
+  text-transform: uppercase;
+    h2{
+      margin-top: 0;
+      padding-top: 30px;
+    }
+}
+
+
+.contact-present{
+ padding-top: 20px;
+ position: absolute;
+ margin: auto;
+
+}
+
+/*------formulaire------------*/
+.contact-form{
+  position: relative;
+  margin-top: 90px;
+}
+
+.form-control {
+  color: $primary-color;
+  height:90px;
+  font-size: 55px;
+  box-shadow: inset 0px 1px 0  rgba(255, 255, 255, .095);
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+.form-control:focus{
+box-shadow: inset 0px 1px 0  rgba(255, 255, 255, .035);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+textarea.form-control {
+    min-height: 180px;
+    resize: none;
+}
+
+/*------btn-envoyer------------*/
+.envoyer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+
+@media screen and(max-width: 899px){
+.envoyer {
+   width:100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+}
+
+@media screen and(min-width: 900px)and(max-width: 1025px){
+.envoyer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 250px;
+}
+}
+
+
+.btn-submit{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  border-style: none;
+  border: 1px solid  $btn-color;
+
+}
+
+.btn-submit:hover{
+  background-color: $btn-color;
+  border-color:#49c7bf;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+/*------open-contact-formulaire-----------*/
+
+.contact-detail {
+    z-index: 5000;
+    position:fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.contact-detail a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.contact-detail a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/*-------contact-------------*/

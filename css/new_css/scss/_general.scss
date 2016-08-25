@@ -1,0 +1,113 @@
+/*-------------variable-color-texte--------------*/
+$color-txt: #333;
+$color-txt-nav: #777;
+$color-txt-nav-hover: #555;
+$color-txt-clair: #fff;
+
+
+
+/*-------------variable-color--------------*/
+$primary-color: #23918a;
+
+
+/*-------------variable-color-btn-------------*/
+$btn-color: #23918a;
+
+
+/*-------------general------------*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F6F7F2;
+    color: $color-txt;
+}
+
+#container{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    transition: margin-left .5s;
+}
+
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+hr{
+  width: 70%;
+  border-bottom:1px dotted #999;
+}
+
+
+
+/*-------------footer---------------*/
+
+.footer{
+background-color: #000;
+}
+
+.credit{
+  font-size: 18px;
+}
+
+.credit p{
+padding-top: 40px;
+display: inline-block;
+}
+
+.logo-footer{
+padding-top: 10px;
+float: right;
+}
+
+.logo-footer ul{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.logo-footer ul li {
+  float:left;
+  padding-top:10px;
+  margin-right: 20px;/*-----reglage espacement icon-------*/
+  display: block;
+  width: 55px; /*-----------taille background icon--------*/
+  height:55px;
+}
+
+.onepale{
+  margin-top: 15px;
+}
+
+
+@media screen and(max-width: 769px){
+  .logo-footer{
+  text-align: center;
+  padding-top: 10px;
+  margin: auto;
+  float: inherit;
+  }
+  .fa.fa-copyright{
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
+@media screen and(min-width: 318px)and(max-width: 769px){
+  .credit p{
+  width: 100%;
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  }
+
+}
+/*------------fin-footer---------------*/
